@@ -4,38 +4,31 @@ module.exports = {
     node: true,
     es6: true,
     jest: true,
-    amd: true,
+    amd: true
   },
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: 'module'
   },
   extends: [
     'airbnb-base',
     'prettier',
     'prettier/react',
-    'plugin:react/recommended',
+    'plugin:react/recommended'
   ],
-  plugins: [
-    'detox',
-    'jest',
-    'react',
-    'react-native',
-    'react-hooks',
-    'prettier',
-  ],
+  plugins: ['react', 'react-hooks', 'prettier'],
   settings: {
     react: {
-      version: 'detect',
-    },
+      version: 'detect'
+    }
   },
   rules: {
     // overrides for the front-end compile
@@ -53,8 +46,8 @@ module.exports = {
       'error',
       {
         vars: 'local',
-        args: 'none',
-      },
+        args: 'none'
+      }
     ],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
@@ -69,6 +62,6 @@ module.exports = {
     'max-classes-per-file': 'warn',
     camelcase: 'warn',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
-  },
-};
+    'react-hooks/exhaustive-deps': 'warn'
+  }
+}
