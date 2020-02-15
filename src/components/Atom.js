@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Atom = () => (
-  <div className={`atom ${this.props.name} a-${this.props.index}`}></div>
+const Atom = props => (
+  <div className={`atom ${props.name} a-${props.index}`}></div>
 )
 export default Atom
